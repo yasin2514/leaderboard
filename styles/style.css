@@ -6,6 +6,29 @@ body {
   margin: 0;
   padding: 0;
 }
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #562eff;
+    align-items: center;
+    padding: 10px;
+}
+.logo img{
+    height: 51px;
+    width: 42px;
+}
+
+.nav a{
+    text-decoration: none;
+    margin-left: 30px;
+}
+.nav a:hover{
+  color: rgb(211, 206, 206);
+}
+.nav a,
+.fa-user{
+    color: white;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -17,7 +40,7 @@ main {
   /* height: 680px; */
   padding: 35px;
   border-radius: 5px;
-  margin-top: 21px;
+  margin:20px 0px;
 }
 
 /* ---------------
@@ -60,13 +83,13 @@ top -players styles end
 /* ---------------
 top -bolg styles start
 ------------------ */
-.blogs{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-row-gap:40px;
-    grid-column-gap:40px;
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
 }
-.blog{
+.blog {
   display: flex;
   align-items: center;
 }
@@ -77,8 +100,8 @@ top -bolg styles start
 .blog-info {
   margin-left: 16px;
 }
-.blog-info h3{
-    font-size: 20px;
+.blog-info h3 {
+  font-size: 20px;
 }
 .author-name {
   color: #9f9f9f;
@@ -86,5 +109,64 @@ top -bolg styles start
 }
 .author-name a {
   text-decoration: none;
-  color: #562EFF;
+  color: #562eff;
+}
+/* ---------------
+top -bolg styles end
+------------------ */
+/* ---------------
+course styles start
+------------------ */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:20px;
+}
+.course {
+
+  width: 260px;
+  height: 320px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 30px rgb(226, 224, 224);
+  padding: 10px;
+ 
+}
+.course-banner img {
+  width: 100%;
+}
+.course-detail {
+  font-size: 18px;
+}
+.course-author span {
+  color: #ed6b4f;
+  font-size: 14px;
+  line-height: 30px;
+}
+.course-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filled {
+  color: #ffc014;
+}
+.empty,
+.rating span {
+  color: #aeaeae;
+}
+.fa-star,
+.rating span,
+.fa-clock,
+.time span {
+  font-size: 14px;
+}
+
+.time {
+  background-color: #ffe4e8;
+  padding: 0px 10px;
+  border-radius: 30px;
+}
+.fa-clock,
+.time span {
+  color: #ff4a60;
 }
