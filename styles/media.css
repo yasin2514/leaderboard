@@ -1,0 +1,66 @@
+/* for mobile device */
+@media only screen and (max-width:688px) {
+    .navbar{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .players,
+    .blogs,
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player,
+    .blog,
+    .course{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .courses{
+        grid-row-gap:50px;
+    }
+    .course{
+        margin:0px auto;
+    }
+    
+}
+
+/* for mobile device */
+
+/* for Tablet device */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .navbar{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .players,
+    .courses{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+
+
+    }
+
+    .player,
+    .course{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blog{
+        padding: 5px 158px
+    }
+    .courses{
+        grid-row-gap:50px;
+    }
+    .course{
+        margin:10px auto;
+    }
+    
+}
+
