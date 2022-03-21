@@ -6,6 +6,9 @@
     .container{
         width: 100%;
     }
+    .section-title{
+        text-align: center;
+    }
     .players,
     .blogs,
     .courses{
@@ -36,6 +39,9 @@
     }
     .container{
         width: 100%;
+    }
+     .section-title{
+         text-align: center;
     }
     .players,
     .courses{
